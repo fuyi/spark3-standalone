@@ -3,9 +3,13 @@
 * ~Create Spark application from notebook~
 * ~Create PySpark job from local shell~
 * ~use spark-submit to submit a python job~
-* spark-submit to run a example java spark application
+* ~spark-submit to run a example java spark application~
 * Run Event2S3 pipline on the docker cluster
 
+## Submit Java Pipeline to Spark standalone cluster
+
+1. Build fat jar with `mvn package`
+2. Submit the applciation `spark-submit --master spark://localhost:7077 --executor-memory 512M target/sparkwordcount-0.1.0-SNAPSHOT.jar`
 
 ## Question
 
